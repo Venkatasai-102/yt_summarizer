@@ -5,7 +5,7 @@ Fed up with watching a long video only to realize its waste of time... 😢, now
 - Give a brief summary and divides the entire transcript in to meaningful sections and explain them.
 - At the end, it provides, key insights and mentions some quotations used in the video.
 - It takes top `100` comments, anazlyses and says what most people are saying, lists any insightful/thoughtful comments
-
+* -> Currently supported languages: Telugu, Hindi and English
 ## How to setup
 - Create a python virtual environment and install the following pip modules:
 ```bash
