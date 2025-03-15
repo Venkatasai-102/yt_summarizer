@@ -27,7 +27,7 @@ def get_video_id(url):
 def get_transcription(video_id):
     """Fetch transcription if available."""
     try:
-        transcript = YouTubeTranscriptApi.get_transcript(video_id, languages=['en'])
+        transcript = YouTubeTranscriptApi.get_transcript(video_id, languages=['te', 'hi', 'en'])
         return ' '.join([item['text'] for item in transcript])
     except Exception as e:
         print(f"Transcription not available: {e}")
@@ -35,7 +35,7 @@ def get_transcription(video_id):
 
 def summarize_transcription(text):
     """Summarize transcription using Gemini API."""
-    task_prompt = """Analyze the text, understand it and create a comprehensize and detailed summary.
+    task_prompt = """Analyze the text, understand it and create a comprehensive and detailed summary.
 I expect you to give a brief summary first, then divide the text into sections, and explain each section.
 At the end, provide key insights and quotations from the text and put them in different sections as well."""
     prompt = task_prompt + f': {text}'
