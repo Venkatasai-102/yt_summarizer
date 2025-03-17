@@ -10,7 +10,7 @@ Fed up with watching a long video only to realize its waste of time... 😢, now
 ## How to setup
 - Create a python virtual environment and install the following pip modules:
 ```bash
-pip install requests youtube-transcript-api google-generativeai
+pip install requests youtube-transcript-api google-generativeai dotenv
 ```
 - Save the code in `summarizer_with_transcript.py` in a python file.
 - You need to save the following environment variables in a `.env` file.
